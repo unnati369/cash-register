@@ -34,7 +34,9 @@ checkBtn.addEventListener('click', ()=>{
         // checkBtn.style.display = "none";
         calculateReturnChange(Amount, cashGiven);
     }
-
+else if(cashGiven = Amount && cashGiven > 0){
+    displayError("Bill has been paid.")
+}
     
     else{
         displayError("Given Cash is less than bill amount")
