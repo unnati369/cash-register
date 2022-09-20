@@ -30,13 +30,11 @@ checkBtn.addEventListener('click', ()=>{
     hideError();
     var cashGiven = Number(cashAmount.value);
     var Amount = Number(billAmount.value);
-    if(cashGiven > Amount && cashGiven > 0){
+    if(cashGiven >= Amount && cashGiven > 0){
         // checkBtn.style.display = "none";
         calculateReturnChange(Amount, cashGiven);
     }
-else if(cashGiven = Amount && cashGiven > 0){
-    displayError("Bill has been paid.")
-}
+
     
     else{
         displayError("Given Cash is less than bill amount")
